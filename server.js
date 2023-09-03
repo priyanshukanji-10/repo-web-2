@@ -1,12 +1,21 @@
 const express = require("express");
 const app = express();
+const mongoose=require('mongoose');
 const path = require('path');
 const homeRouter = require('./routes/articles');
 const publicpath = path.join(__dirname, 'public');
+mongoose.connect('mongodb://localhost:27017/Blogs',{
+    useNewUrlParser:true,
+    useUnifiedTopology:true
+})
+app.use(express.urlencoded({extended:false})=>{
+    title:req.body.title,
+    description:req.body.description,
+    write:req.body.write-here
+})
 app.use(express.static(publicpath));
 app.set('view engine', 'ejs');
 ;
-
 app.get('/', (req, res) => {
     res.render('Home');
 });
@@ -31,6 +40,9 @@ app.get('/blog', (req, res) => {
     res.render('blog', {
         blogs: blogs
     });
+});
+app.get('/blogs/new',(req,res)=>{
+    res.render('new')
 });
 app.use('/Home', homeRouter);
 

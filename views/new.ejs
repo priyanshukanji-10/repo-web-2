@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs-Now | New Blog</title>
+    <link rel="stylesheet" href="css/new.css">
+</head>
+<body>
+    <header>
+        <div class="Navbar">
+          <div class="logo-image" class="nav-obj"></div>
+          <div id="logo-text" class="nav-obj">Blogs Now</div>
+  
+          <div class="nav-obj pages-link">
+            <i class="fa-solid fa-house"></i>
+            <a href="http://localhost:3001/blog"> Home</a>
+          </div>
+          <div class="nav-obj pages-link">
+            <i class="fa-solid fa-feather"></i>
+            <a href="#"> Trending</a>
+          </div>
+          <div class="nav-obj pages-link">
+            <i class="fa-solid fa-wifi"></i>
+            <a href="#"> Your interests</a>
+          </div>
+        </div>
+      </header>
+<div class="form-container">
+    <h1>New Article</h1>
+    <form action="/blogs",method="POST">
+<%- include('_form_fields')%>
+    </form>
+</div>
+      <footer>
+        <div class="Contact">
+    <h2>Contact Us</h2>     
+    <a class="nav-obj" target="_main" href="https://www.linkedin.com/in/priyanshu-kanji-b5435a27b/"
+      ><i class="fa-brands fa-linkedin"></i>Linkedin</a
+    >
+          <a class="nav-obj" href="https://github.com/priyanshukanji-10"
+            ><i class="fa-brands fa-github"></i>Github</a
+          >
+          <a class="nav-obj" href="https://www.instagram.com/priyanshu_lens_10/"
+            ><i class="fa-brands fa-instagram" style="color: #f72665"></i
+            >Instagram</a
+          >
+        </div>
+      </footer>
+</body>
+</html>

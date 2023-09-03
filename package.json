@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "Appstart":"nodemon server.js"
+    "Appstart": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
