@@ -2,31 +2,36 @@ const express = require("express");
 const app = express();
 const path = require('path');
 const homeRouter = require('./routes/articles');
-
-// Define the public path before setting up routes
 const publicpath = path.join(__dirname, 'public');
 app.use(express.static(publicpath));
-
-// Set EJS as the view engine
 app.set('view engine', 'ejs');
 ;
 
 app.get('/', (req, res) => {
     res.render('Home');
 });
-
+app.get('/login', (req, res) => {
+    res.render('login')
+});
+app.get('/signup', (req, res) => {
+    res.render('signup')
+});
 app.get('/blog', (req, res) => {
-    const blog=[{
-        title:'test title',
-        Date: Date.now(),
-        Description:'test description'
-    }]
+    const blogs = [{
+        title: 'test title',
+        Date: new Date(),
+        Description: 'test description'
+    },
+    {
+        title: 'test title1',
+        Date: new Date(),
+        Description: 'test description6'
+    }
+    ]
     res.render('blog', {
-        blog:blog
+        blogs: blogs
     });
 });
-
-// Define routes
 app.use('/Home', homeRouter);
 
 app.listen(3001, () => {

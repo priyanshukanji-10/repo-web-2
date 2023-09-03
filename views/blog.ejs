@@ -35,23 +35,33 @@
     </header>
     <!-- Navbar ends -->
     <div class="newpost">
-      <a href="/blog/newarticles" type="button">New Blog</a>
+      <a href="/blog/new" type="button">New Blog</a>
     </div>
     <p class="sub-heading">Latest Posts</p>
+    <%blogs.forEach(blogs=>{%>
+    <div class="new-blog-container">
     <div class="new-blog">  
     <div class="dropdown">
       <button class="dropbtn"><i class="fa-solid fa-caret-down"></i></button>
       <div class="dropdown-content">
         <a href="blog/edit"><i class="fa-solid fa-pen"></i>Edit</a> 
         <a href="blog/delete"><i class="fa-solid fa-trash"></i>Delete</a>
-      </div>
-    </div>
-    <div class="readMore"><a href="blog/readMore">Read More</a></div>
-   </div>
-      <p class="blog-heading"></p>
+        <p class="blog-heading"></p>
       <p class="blog-description"></p>
       <p class="blog-date"></p>
-      
+    </div>
+  </div>
+<div class="title">
+<%= blogs.title%>
+</div>
+    <div class="date">
+      <%=blogs.Date.toLocaleDateString()%>
+    </div> 
+    <div class="description"><%=blogs.Description%></div>
+    <div class="readMore"><a href="blog/readMore">Read More</a></div>
+   </div>
+  </div>
+  <% }) %>   
     </div>
   </body>
   </html>

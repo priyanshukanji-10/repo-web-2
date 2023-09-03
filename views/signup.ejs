@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs Now|Signup</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <header>
+        <div class="Navbar">
+          <div class="logo-image" class="nav-obj"></div>
+          <div id="logo-text" class="nav-obj">Blogs Now</div>
+  
+          <div class="nav-obj pages-link">
+            <i class="fa-solid fa-house"></i>
+            <a href="#">Home</a>
+          </div>
+          <div class="nav-obj pages-link">
+            <i class="fa-solid fa-feather"></i>
+            <a href="#">Trending</a>
+          </div>
+          <div class="nav-obj pages-link">
+            <i class="fa-solid fa-wifi"></i>
+            <a href="#">Your interests</a>
+          </div>
+        </div>
+      </header>
+      <div class="body-container">
+        <div class="box-container">
+          <p id="heading">Sign up</p>
+          <p class="hed-description">Stay Updated with Daily Blogs!</p>
+          <div class="form-container">
+            <form action="/signup" method="post">
+            <input
+            id="Name"
+              class="Forms"
+              type="text"
+              for="Name"
+              placeholder="Enter your Name"
+              required
+            />
+            <input 
+            id="DOB"
+            type="date" 
+            name="Date of Birth" 
+            class="Forms"
+            required
+            />
+            <input
+            id="email"
+              class="Forms"
+              type="email"
+              for="username"
+              placeholder="Enter your email"
+              required
+            />
+            <input
+            id="password"
+              class="Forms"
+              type="password"
+              for="Password"
+              placeholder="Create Password"
+              required
+            />
+            <input
+            id="rePassword"
+              class="Forms"
+              type="password"
+              for="Password"
+              placeholder="Re-enter created Password"
+              required
+            />
+            <button class="login-button" type="submit">Signup</button>
+          </form>
+          <p class="hed-description"> Already have account in BlogsNow? <a href='/login''>Log in Now!</a></p>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <div class="Contact">
+<h2>Contact Us</h2>     
+<a class="nav-obj" target="_main" href="https://www.linkedin.com/in/priyanshu-kanji-b5435a27b/"
+  ><i class="fa-brands fa-linkedin"></i>Linkedin</a
+>
+      <a class="nav-obj" href="https://github.com/priyanshukanji-10"
+        ><i class="fa-brands fa-github"></i>Github</a
+      >
+      <a class="nav-obj" href="https://www.instagram.com/priyanshu_lens_10/"
+        ><i class="fa-brands fa-instagram" style="color: #f72665"></i
+        >Instagram</a
+      >
+    </div>
+  </footer>
+    <script src="../public/js/Home.js"></script>
+</body>
+</html>
