@@ -1,0 +1,156 @@
+.logo-image {
+  background-image: url("../images/Logo.png");
+  background-size: cover;
+  height: 65px;
+  width: 65px;
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+  color: unset;
+}
+.nav-obj {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.Navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: #ebb3a9;
+  margin-bottom: 10px;
+}
+.Navbar i {
+  height: 20px;
+  width: 20px;
+}
+.buttons {
+  background-color: #e86252;
+  height: 35px;
+  width: 100px;
+  border-radius: 10%;
+}
+.nav-obj:hover {
+  border: 2px solid #7c0b2b;
+  text-decoration: underline;
+}
+.buttons:active {
+  background-color: red;
+  color: black;
+}
+.pages-link {
+  color: #0d3b66;
+}
+.pages-link:active {
+  color: red;
+}
+.intro-container {
+  background-image: url(https://www.theedublogger.com/files/2019/03/10-Minute-Weekly-Blogging-Plan-tasqn3-prizg4-1080x720.jpeg);
+  height: 720px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro {
+  height: 400px;
+  width: 70%;
+  font-size: 1.9rem;
+  color: rgb(133, 2, 23);
+}
+.Contact label {
+  display: block;
+}
+.Contact {
+  width: 100%;
+  height: 70px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.842);
+  color: aliceblue;
+}
+.newpost {
+  height: 40px;
+  width: 100px;
+  background-color: #843b62;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6%;
+  font-size: 1.3rem;
+  font-weight: 600;
+  position: relative;
+  left: 1%;
+}
+.sub-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  position: relative;
+  left: 1%;
+}
+.new-blog {
+  height: 300px;
+  width: 85%;
+  background-color: #f8c630;
+  border-radius: 5%;
+}
+/* Dropdown Button */
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  left: 90%;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.readMore{
+  height: 50px;
+  width: 100px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #04AA6D;
+  position: relative;
+  top: 15rem;
+}
