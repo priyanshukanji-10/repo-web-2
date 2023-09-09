@@ -29,4 +29,7 @@ npm run Appstart
 ```
 http://localhost:3001
 ```
-![Preview Picture](https://github.com/priyanshukanji-10/repo-web-2/blob/b5507a3344b4077acfad5a911142342f57317214/Readme%20Images/Screenshot%20(1).png "Preview Image")
+
+# Preview
+
+![Preview Picture](<https://github.com/priyanshukanji-10/repo-web-2/blob/b5507a3344b4077acfad5a911142342f57317214/Readme%20Images/Screenshot%20(1).png>)
