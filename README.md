@@ -32,4 +32,4 @@ http://localhost:3001
 
 # Preview
 
-![Preview Picture](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-on_wrne5eZZshFVfg3tmV500DCfFL-wLN8Ubne_C&s)
+![Preview Picture](Readme Images/Screenshot (1).png)
