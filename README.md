@@ -32,4 +32,4 @@ http://localhost:3001
 
 # Preview
 
-![Preview Picture](Readme Images/Screenshot (1).png)
+![Preview Picture](https://github.com/priyanshukanji-10/repo-web-2/blob/67afd39e8ec438894820b99dc5dda7234dd50519/Readme%20Images/Screenshot%20(1).jpeg)
